@@ -1,0 +1,427 @@
+OPTIMIZATION: Using 20 parallel processes for fingerprint generation
+
+**************************************************************************************
+* PyRMD: AI-powered Virtual Screening                                                *
+* Copyright (C) 2021  Dr. Giorgio Amendola, Prof. Sandro Cosconati                   *
+*                                                                                    *
+* This program is free software: you can redistribute it and/or modify               *
+* it under the terms of the GNU Affero General Public License as published           * 
+* by the Free Software Foundation, either version 3 of the License, or               *
+* (at your option) any later version.                                                *
+*                                                                                    *
+* This program is distributed in the hope that it will be useful,                    *
+* but WITHOUT ANY WARRANTY; without even the implied warranty of                     *
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                      * 
+* GNU Affero General Public License for more details.                                * 
+*                                                                                    *
+* You should have received a copy of the GNU Affero General Public License           *
+* along with this program.  If not, see <https://www.gnu.org/licenses/>.             *
+*                                                                                    *  
+* If you used PyRMD in your work, please cite the article:                           *
+* <https://pubs.acs.org/doi/10.1021/acs.jcim.1c00653>                                *
+*                                                                                    *
+* Please check our GitHub page for more information                                  *
+* <https://github.com/cosconatilab/PyRMD>                                            *
+**************************************************************************************
+
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                       (((                                      
+                                      (((((                                     
+                                    ((((((((                                    
+                                   (((((((((                                    
+                                 ((((((((((   %%                                
+                                ((((((((((   %%%%                               
+                              ####((((((   %%%%%%%%                             
+                            (#########(    %%%%%%%%%                            
+                           ##########       %%%%%%%%%%                          
+                         ###########         %%%%%%#####                        
+                        %%%#######             ##########                       
+                      %%%%%%%%%##               ###########                     
+                     (%%%%%%%%%                   ##########                    
+                   (((%%%%%%%(                     #########((                  
+                  ((((#%%%%%                         ##((((((((                 
+                 (((((##%%%                           %(((((((((                
+                 (((#########                       %%%%((((((((                
+                  (##########%%%%               %%%%%%%%(((((((                 
+                    #######%%%%%%%%%%&     #####%%%%%%%((((((                   
+                        #%%%%%%%%     (###########%%%%(((                       
+                                 ,((((((###########%                            
+                                 (((((((((#####/                                
+                                       (((                                      
+                                                                                
+                                                                                
+                                                                                
+        &&&&&&&&&&            &&&&&&&&&&   (&&&       &&&&   &&&%&&&&&&         
+        &&&&  &&&& &&&   &&&  &&&&  /&&&   &&&&&.    &&&&&   &&&#   &&&&        
+        %&&&%&&&%  &%&   &&&  &&%&&&%&&    &%&&&%   %&&&%&   &&&(    &&&%       
+        &&&&       &&&   &&&  &&&&  &&&&   &&& &&& &&& &&&   &&&#    &&&        
+        &&&&       &&&&&&&&&, &&&&   &&&&  &&&  &&&&&  &&&&  &&&%&&&&&&         
+                          &&&                                                   
+                    &&&&&&&&                                                    
+ 
+ 
+            +--------------------------------------------------+
+            |       PyRMD: AI-powered Virtual Screening        |
+            |                                                  |
+            |            ~~~~ Cosconati Lab ~~~~               |
+            +--------------------------------------------------+
+
+
+//////// BENCHMARK MODE \\\\\\\\ 
+
+----BUILDING TRAINING DATASET----
+
+Training: Loading the ChEMBL dataset(s): /Path/to/Tutorial/PyRMD/Benchmarking/fgfr1_chembl.csv
+OPTIMIZATION: Loading dataset from /Path/to/Tutorial/PyRMD/Benchmarking/fgfr1_chembl.csv
+OPTIMIZATION: File size: 0.00 GB
+OPTIMIZATION: Loaded 7,881 compounds in 0.09 seconds
+
+Training: Compounds will be considered active if they are reported to have a value of 
+          IC50, EC50, Ki, Kd, or potency, inferior to 1001 nM. 
+          They will be classified as inactive if their IC50, EC50, Ki, Kd, or potency will be greater
+          than 39999 nM
+
+For duplicate entries, only the most active one will be considered.
+
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 5,288 molecules using 20 parallel processes
+  ... 5.0% complete (264/5,288) - 453.6 molecules/sec - ETA: 0.2 min
+  ... 10.0% complete (528/5,288) - 641.8 molecules/sec - ETA: 0.1 min
+  ... 15.0% complete (792/5,288) - 733.1 molecules/sec - ETA: 0.1 min
+  ... 20.0% complete (1,056/5,288) - 681.2 molecules/sec - ETA: 0.1 min
+  ... 25.0% complete (1,320/5,288) - 739.5 molecules/sec - ETA: 0.1 min
+  ... 30.0% complete (1,584/5,288) - 777.9 molecules/sec - ETA: 0.1 min
+  ... 34.9% complete (1,848/5,288) - 802.5 molecules/sec - ETA: 0.1 min
+  ... 39.9% complete (2,112/5,288) - 710.1 molecules/sec - ETA: 0.1 min
+  ... 44.9% complete (2,376/5,288) - 733.2 molecules/sec - ETA: 0.1 min
+  ... 49.9% complete (2,640/5,288) - 752.2 molecules/sec - ETA: 0.1 min
+  ... 54.9% complete (2,904/5,288) - 753.4 molecules/sec - ETA: 0.1 min
+  ... 59.9% complete (3,168/5,288) - 704.8 molecules/sec - ETA: 0.1 min
+  ... 64.9% complete (3,432/5,288) - 708.7 molecules/sec - ETA: 0.0 min
+  ... 69.9% complete (3,696/5,288) - 714.6 molecules/sec - ETA: 0.0 min
+  ... 74.9% complete (3,960/5,288) - 723.7 molecules/sec - ETA: 0.0 min
+  ... 79.9% complete (4,224/5,288) - 682.0 molecules/sec - ETA: 0.0 min
+  ... 84.9% complete (4,488/5,288) - 689.7 molecules/sec - ETA: 0.0 min
+  ... 89.9% complete (4,752/5,288) - 691.4 molecules/sec - ETA: 0.0 min
+  ... 94.9% complete (5,016/5,288) - 674.3 molecules/sec - ETA: 0.0 min
+  ... 99.8% complete (5,280/5,288) - 678.0 molecules/sec - ETA: 0.0 min
+  ... 100.0% complete (5,288/5,288) - 678.6 molecules/sec - ETA: 0.0 min
+Database loaded in 8.04 seconds (657.9 molecules/sec)
+Database preparation: Removing duplicate entries...
+Training: The training dataset consists of 1845 active compounds and 197 inactive compounds
+Training: The training dataset has been written to the file clean_training_db.csv
+Training dataset preparation is complete!
+
+
+----BUILDING DECOY DATASET----
+
+Decoys: Loading the decoy compounds dataset(s): /Path/to/Tutorial/PyRMD/Benchmarking/fgfr1_decoys.csv
+Decoys: Decoy compounds will only be used for benchmarking purposes, they will not be used to train the algorithm
+OPTIMIZATION: Loading dataset from /home/javedwaqas069/Tutorial/PyRMD/Benchmarking/fgfr1_decoys.csv
+OPTIMIZATION: File size: 0.00 GB
+OPTIMIZATION: Loaded 8,699 compounds in 0.01 seconds
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 8,699 molecules using 20 parallel processes
+  ... 5.0% complete (434/8,699) - 607.7 molecules/sec - ETA: 0.2 min
+  ... 10.0% complete (868/8,699) - 718.4 molecules/sec - ETA: 0.2 min
+  ... 15.0% complete (1,302/8,699) - 624.7 molecules/sec - ETA: 0.2 min
+  ... 20.0% complete (1,736/8,699) - 662.1 molecules/sec - ETA: 0.2 min
+  ... 24.9% complete (2,170/8,699) - 484.3 molecules/sec - ETA: 0.2 min
+  ... 29.9% complete (2,604/8,699) - 525.2 molecules/sec - ETA: 0.2 min
+  ... 34.9% complete (3,038/8,699) - 530.4 molecules/sec - ETA: 0.2 min
+  ... 39.9% complete (3,472/8,699) - 553.0 molecules/sec - ETA: 0.2 min
+  ... 44.9% complete (3,906/8,699) - 574.3 molecules/sec - ETA: 0.1 min
+  ... 49.9% complete (4,340/8,699) - 579.8 molecules/sec - ETA: 0.1 min
+  ... 54.9% complete (4,774/8,699) - 603.4 molecules/sec - ETA: 0.1 min
+  ... 59.9% complete (5,208/8,699) - 588.3 molecules/sec - ETA: 0.1 min
+  ... 64.9% complete (5,642/8,699) - 605.4 molecules/sec - ETA: 0.1 min
+  ... 69.8% complete (6,076/8,699) - 602.7 molecules/sec - ETA: 0.1 min
+  ... 74.8% complete (6,510/8,699) - 616.3 molecules/sec - ETA: 0.1 min
+  ... 79.8% complete (6,944/8,699) - 626.2 molecules/sec - ETA: 0.0 min
+  ... 84.8% complete (7,378/8,699) - 616.4 molecules/sec - ETA: 0.0 min
+  ... 89.8% complete (7,812/8,699) - 624.1 molecules/sec - ETA: 0.0 min
+  ... 94.8% complete (8,246/8,699) - 624.1 molecules/sec - ETA: 0.0 min
+  ... 99.8% complete (8,680/8,699) - 634.7 molecules/sec - ETA: 0.0 min
+  ... 100.0% complete (8,699/8,699) - 635.8 molecules/sec - ETA: 0.0 min
+Database loaded in 13.82 seconds (629.4 molecules/sec)
+Decoys: The decoy dataset consists of 8699 compounds. Duplicate compounds will be discarded
+Decoys dataset preparation is complete!
+
+Preparing for calculations...
+
+Clusters found: 950 with a similarity cutoff: 0.7
+Training set clustering labels saved to disk.
+
+
+----BENCHMARKING CALCULATIONS----
+
+Benchmarking: Calculating statistics for 5 training database splits and 3 repetition(s):
+
+Fold 1 - Rep 1:
+
+    ~~ True positive rate (Recall): 0.795
+    ~~ False positives rate: 0.001
+    ~~ Precision: 0.966
+    ~~ F Score: 0.872
+    ~~ ROC AUC: 0.951
+    ~~ PRC AUC: 0.856
+    ~~ BEDROC: 0.894
+    ~~ #True Positives: 342
+    ~~ #False Positives: 12
+    ~~ #True Negatives: 8316
+    ~~ #False Negatives: 88
+    
+
+Fold 2 - Rep 1:
+
+    ~~ True positive rate (Recall): 0.808
+    ~~ False positives rate: 0.000
+    ~~ Precision: 1.000
+    ~~ F Score: 0.894
+    ~~ ROC AUC: 0.950
+    ~~ PRC AUC: 0.865
+    ~~ BEDROC: 0.902
+    ~~ #True Positives: 353
+    ~~ #False Positives: 0
+    ~~ #True Negatives: 8316
+    ~~ #False Negatives: 84
+    
+
+Fold 3 - Rep 1:
+
+    ~~ True positive rate (Recall): 0.736
+    ~~ False positives rate: 0.000
+    ~~ Precision: 0.989
+    ~~ F Score: 0.844
+    ~~ ROC AUC: 0.925
+    ~~ PRC AUC: 0.801
+    ~~ BEDROC: 0.847
+    ~~ #True Positives: 276
+    ~~ #False Positives: 3
+    ~~ #True Negatives: 8312
+    ~~ #False Negatives: 99
+    
+
+Fold 4 - Rep 1:
+
+    ~~ True positive rate (Recall): 0.798
+    ~~ False positives rate: 0.000
+    ~~ Precision: 0.989
+    ~~ F Score: 0.883
+    ~~ ROC AUC: 0.929
+    ~~ PRC AUC: 0.838
+    ~~ BEDROC: 0.875
+    ~~ #True Positives: 261
+    ~~ #False Positives: 3
+    ~~ #True Negatives: 8329
+    ~~ #False Negatives: 66
+    
+
+Fold 5 - Rep 1:
+
+    ~~ True positive rate (Recall): 0.739
+    ~~ False positives rate: 0.001
+    ~~ Precision: 0.971
+    ~~ F Score: 0.840
+    ~~ ROC AUC: 0.926
+    ~~ PRC AUC: 0.786
+    ~~ BEDROC: 0.832
+    ~~ #True Positives: 204
+    ~~ #False Positives: 6
+    ~~ #True Negatives: 8325
+    ~~ #False Negatives: 72
+    
+
+Fold 1 - Rep 2:
+
+    ~~ True positive rate (Recall): 0.757
+    ~~ False positives rate: 0.000
+    ~~ Precision: 1.000
+    ~~ F Score: 0.862
+    ~~ ROC AUC: 0.934
+    ~~ PRC AUC: 0.819
+    ~~ BEDROC: 0.863
+    ~~ #True Positives: 302
+    ~~ #False Positives: 0
+    ~~ #True Negatives: 8319
+    ~~ #False Negatives: 97
+    
+
+Fold 2 - Rep 2:
+
+    ~~ True positive rate (Recall): 0.805
+    ~~ False positives rate: 0.000
+    ~~ Precision: 0.990
+    ~~ F Score: 0.887
+    ~~ ROC AUC: 0.938
+    ~~ PRC AUC: 0.853
+    ~~ BEDROC: 0.889
+    ~~ #True Positives: 284
+    ~~ #False Positives: 3
+    ~~ #True Negatives: 8335
+    ~~ #False Negatives: 69
+    
+
+Fold 3 - Rep 2:
+
+    ~~ True positive rate (Recall): 0.821
+    ~~ False positives rate: 0.001
+    ~~ Precision: 0.977
+    ~~ F Score: 0.892
+    ~~ ROC AUC: 0.957
+    ~~ PRC AUC: 0.865
+    ~~ BEDROC: 0.896
+    ~~ #True Positives: 298
+    ~~ #False Positives: 7
+    ~~ #True Negatives: 8316
+    ~~ #False Negatives: 65
+    
+
+Fold 4 - Rep 2:
+
+    ~~ True positive rate (Recall): 0.738
+    ~~ False positives rate: 0.000
+    ~~ Precision: 0.993
+    ~~ F Score: 0.847
+    ~~ ROC AUC: 0.929
+    ~~ PRC AUC: 0.813
+    ~~ BEDROC: 0.858
+    ~~ #True Positives: 271
+    ~~ #False Positives: 2
+    ~~ #True Negatives: 8313
+    ~~ #False Negatives: 96
+    
+
+Fold 5 - Rep 2:
+
+    ~~ True positive rate (Recall): 0.829
+    ~~ False positives rate: 0.003
+    ~~ Precision: 0.915
+    ~~ F Score: 0.870
+    ~~ ROC AUC: 0.944
+    ~~ PRC AUC: 0.866
+    ~~ BEDROC: 0.901
+    ~~ #True Positives: 301
+    ~~ #False Positives: 28
+    ~~ #True Negatives: 8299
+    ~~ #False Negatives: 62
+    
+
+Fold 1 - Rep 3:
+
+    ~~ True positive rate (Recall): 0.771
+    ~~ False positives rate: 0.001
+    ~~ Precision: 0.967
+    ~~ F Score: 0.858
+    ~~ ROC AUC: 0.940
+    ~~ PRC AUC: 0.836
+    ~~ BEDROC: 0.877
+    ~~ #True Positives: 290
+    ~~ #False Positives: 10
+    ~~ #True Negatives: 8306
+    ~~ #False Negatives: 86
+    
+
+Fold 2 - Rep 3:
+
+    ~~ True positive rate (Recall): 0.649
+    ~~ False positives rate: 0.000
+    ~~ Precision: 1.000
+    ~~ F Score: 0.787
+    ~~ ROC AUC: 0.900
+    ~~ PRC AUC: 0.731
+    ~~ BEDROC: 0.788
+    ~~ #True Positives: 209
+    ~~ #False Positives: 0
+    ~~ #True Negatives: 8333
+    ~~ #False Negatives: 113
+    
+
+Fold 3 - Rep 3:
+
+    ~~ True positive rate (Recall): 0.700
+    ~~ False positives rate: 0.000
+    ~~ Precision: 0.995
+    ~~ F Score: 0.822
+    ~~ ROC AUC: 0.924
+    ~~ PRC AUC: 0.781
+    ~~ BEDROC: 0.830
+    ~~ #True Positives: 208
+    ~~ #False Positives: 1
+    ~~ #True Negatives: 8323
+    ~~ #False Negatives: 89
+    
+
+Fold 4 - Rep 3:
+
+    ~~ True positive rate (Recall): 0.856
+    ~~ False positives rate: 0.000
+    ~~ Precision: 0.995
+    ~~ F Score: 0.920
+    ~~ ROC AUC: 0.955
+    ~~ PRC AUC: 0.889
+    ~~ BEDROC: 0.920
+    ~~ #True Positives: 369
+    ~~ #False Positives: 2
+    ~~ #True Negatives: 8325
+    ~~ #False Negatives: 62
+    
+
+Fold 5 - Rep 3:
+
+    ~~ True positive rate (Recall): 0.847
+    ~~ False positives rate: 0.002
+    ~~ Precision: 0.962
+    ~~ F Score: 0.901
+    ~~ ROC AUC: 0.956
+    ~~ PRC AUC: 0.883
+    ~~ BEDROC: 0.915
+    ~~ #True Positives: 355
+    ~~ #False Positives: 14
+    ~~ #True Negatives: 8308
+    ~~ #False Negatives: 64
+    
+
++---------------------------------------------------------+
+| Averaged Benchmarking Results With Confidence Intervals |
++---------------------------------------------------------+
+
+
+True Positive Rate (Recall)
+~~ 0.777 ± 0.032
+
+False Positive Rate
+~~ 0.001 ± 0.001
+
+Precision
+~~ 0.981 ± 0.012
+
+F Score
+~~ 0.865 ± 0.019
+
+ROC AUC
+~~ 0.937 ± 0.009
+
+PRC AUC
+~~ 0.832 ± 0.024
+
+BEDROC
+~~ 0.872 ± 0.020
+
++---------------------------------------------------------+
+
+Benchmarking: Generating representative ROC curve
+Benchmarking: ROC curve saved to ROC_curve.png
+
+Benchmarking: Generating representative PRC curve
+Benchmarking: PRC curve saved to PRC_curve.png
+Benchmarking process complete!
+The benchmark results are being written in the file /Path/to/Tutorial/PyRMD/Benchmarking/Benchmark_Results.csv
