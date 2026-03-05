@@ -1,3 +1,6 @@
+<img width="5120" height="2096" alt="pyrmd_logo" src="https://github.com/user-attachments/assets/ebaf5480-34a3-4e33-bdf2-b46de9727dbf" />
+
+
 # PyRMD-Studio
 About PyRMD Studio is an open-source GUI suite democratizing AI for drug discovery. It empowers non-experts to run Ligand-Based and Structure-Based Virtual Screening without coding. By using Butina clustering, it prevents data leakage while achieving a 3.3-fold screening speedup over previous versions.
 
