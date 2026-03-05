@@ -1,0 +1,35 @@
+name: pyrmd_studio
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - rdkit
+  - openpyxl
+  - pyqt=5.15
+  - openbabel
+  - scipy
+  - joblib
+  - pillow
+  - patsy
+  - statsmodels
+  - sqlalchemy
+  - pycairo
+  - pip
+  - pip:
+    - configparser
+    - charset-normalizer==3.4.0
+    - click==8.1.7
+    - idna==3.10
+    - pyarrow==18.0.0
+    - pystow==0.6.0
+    - requests==2.32.3
+    - tqdm==4.67.0
+    - psutil==7.0.0
+    - urllib3==2.2.3
+    - PyQt5-tools
