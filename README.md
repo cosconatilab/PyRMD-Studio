@@ -11,3 +11,5 @@ The installation script automates dependency management and system configuration
 
 5.	Follow the on-screen prompts. The script will detect if Conda is installed and install Miniconda if necessary. It will then create a dedicated Conda environment for PyRMD Studio. The process typically takes ~10 minutes. 
 6.	When prompted, select the user-specific installation. This is the recommended option as it does not require administrator privileges. 
+
+A sep-by-step guide on how to use PyRMD Studio is provided inside the Tutorial folder. 
