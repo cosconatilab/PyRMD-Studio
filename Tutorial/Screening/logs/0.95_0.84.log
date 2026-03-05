@@ -1,0 +1,307 @@
+OPTIMIZATION: Using 20 parallel processes for fingerprint generation
+
+**************************************************************************************
+* PyRMD: AI-powered Virtual Screening                                                *
+* Copyright (C) 2021  Dr. Giorgio Amendola, Prof. Sandro Cosconati                   *
+*                                                                                    *
+* This program is free software: you can redistribute it and/or modify               *
+* it under the terms of the GNU Affero General Public License as published           * 
+* by the Free Software Foundation, either version 3 of the License, or               *
+* (at your option) any later version.                                                *
+*                                                                                    *
+* This program is distributed in the hope that it will be useful,                    *
+* but WITHOUT ANY WARRANTY; without even the implied warranty of                     *
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                      * 
+* GNU Affero General Public License for more details.                                * 
+*                                                                                    *
+* You should have received a copy of the GNU Affero General Public License           *
+* along with this program.  If not, see <https://www.gnu.org/licenses/>.             *
+*                                                                                    *  
+* If you used PyRMD in your work, please cite the article:                           *
+* <https://pubs.acs.org/doi/10.1021/acs.jcim.1c00653>                                *
+*                                                                                    *
+* Please check our GitHub page for more information                                  *
+* <https://github.com/cosconatilab/PyRMD>                                            *
+**************************************************************************************
+
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                       (((                                      
+                                      (((((                                     
+                                    ((((((((                                    
+                                   (((((((((                                    
+                                 ((((((((((   %%                                
+                                ((((((((((   %%%%                               
+                              ####((((((   %%%%%%%%                             
+                            (#########(    %%%%%%%%%                            
+                           ##########       %%%%%%%%%%                          
+                         ###########         %%%%%%#####                        
+                        %%%#######             ##########                       
+                      %%%%%%%%%##               ###########                     
+                     (%%%%%%%%%                   ##########                    
+                   (((%%%%%%%(                     #########((                  
+                  ((((#%%%%%                         ##((((((((                 
+                 (((((##%%%                           %(((((((((                
+                 (((#########                       %%%%((((((((                
+                  (##########%%%%               %%%%%%%%(((((((                 
+                    #######%%%%%%%%%%&     #####%%%%%%%((((((                   
+                        #%%%%%%%%     (###########%%%%(((                       
+                                 ,((((((###########%                            
+                                 (((((((((#####/                                
+                                       (((                                      
+                                                                                
+                                                                                
+                                                                                
+        &&&&&&&&&&            &&&&&&&&&&   (&&&       &&&&   &&&%&&&&&&         
+        &&&&  &&&& &&&   &&&  &&&&  /&&&   &&&&&.    &&&&&   &&&#   &&&&        
+        %&&&%&&&%  &%&   &&&  &&%&&&%&&    &%&&&%   %&&&%&   &&&(    &&&%       
+        &&&&       &&&   &&&  &&&&  &&&&   &&& &&& &&& &&&   &&&#    &&&        
+        &&&&       &&&&&&&&&, &&&&   &&&&  &&&  &&&&&  &&&&  &&&%&&&&&&         
+                          &&&                                                   
+                    &&&&&&&&                                                    
+ 
+ 
+            +--------------------------------------------------+
+            |       PyRMD: AI-powered Virtual Screening        |
+            |                                                  |
+            |            ~~~~ Cosconati Lab ~~~~               |
+            +--------------------------------------------------+
+
+
+//////// SCREENING MODE \\\\\\\\ 
+
+----BUILDING TRAINING DATASET----
+
+Training: Loading the ChEMBL dataset(s): /home/cosco/cosco_data/malibu/pyrmd/final_29072025/new/Tutorial/PyRMD/Screening/fgfr1_chembl.csv
+OPTIMIZATION: Loading dataset from /home/cosco/cosco_data/malibu/pyrmd/final_29072025/new/Tutorial/PyRMD/Screening/fgfr1_chembl.csv
+OPTIMIZATION: File size: 0.00 GB
+OPTIMIZATION: Loaded 7,881 compounds in 0.11 seconds
+
+Training: Compounds will be considered active if they are reported to have a value of 
+          IC50, EC50, Ki, Kd, or potency, inferior to 1001 nM. 
+          They will be classified as inactive if their IC50, EC50, Ki, Kd, or potency will be greater
+          than 39999 nM
+
+For duplicate entries, only the most active one will be considered.
+
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 5,288 molecules using 20 parallel processes
+  ... 5.0% complete (264/5,288) - 652.0 molecules/sec - ETA: 0.1 min
+  ... 10.0% complete (528/5,288) - 970.5 molecules/sec - ETA: 0.1 min
+  ... 15.0% complete (792/5,288) - 1128.6 molecules/sec - ETA: 0.1 min
+  ... 20.0% complete (1,056/5,288) - 965.4 molecules/sec - ETA: 0.1 min
+  ... 25.0% complete (1,320/5,288) - 1096.5 molecules/sec - ETA: 0.1 min
+  ... 30.0% complete (1,584/5,288) - 1210.6 molecules/sec - ETA: 0.1 min
+  ... 34.9% complete (1,848/5,288) - 1299.1 molecules/sec - ETA: 0.0 min
+  ... 39.9% complete (2,112/5,288) - 1141.5 molecules/sec - ETA: 0.0 min
+  ... 44.9% complete (2,376/5,288) - 1212.0 molecules/sec - ETA: 0.0 min
+  ... 49.9% complete (2,640/5,288) - 1270.6 molecules/sec - ETA: 0.0 min
+  ... 54.9% complete (2,904/5,288) - 1316.7 molecules/sec - ETA: 0.0 min
+  ... 59.9% complete (3,168/5,288) - 1209.5 molecules/sec - ETA: 0.0 min
+  ... 64.9% complete (3,432/5,288) - 1248.8 molecules/sec - ETA: 0.0 min
+  ... 69.9% complete (3,696/5,288) - 1286.1 molecules/sec - ETA: 0.0 min
+  ... 74.9% complete (3,960/5,288) - 1320.4 molecules/sec - ETA: 0.0 min
+  ... 79.9% complete (4,224/5,288) - 1205.8 molecules/sec - ETA: 0.0 min
+  ... 84.9% complete (4,488/5,288) - 1238.5 molecules/sec - ETA: 0.0 min
+  ... 89.9% complete (4,752/5,288) - 1272.7 molecules/sec - ETA: 0.0 min
+  ... 94.9% complete (5,016/5,288) - 1200.5 molecules/sec - ETA: 0.0 min
+  ... 99.8% complete (5,280/5,288) - 1226.3 molecules/sec - ETA: 0.0 min
+  ... 100.0% complete (5,288/5,288) - 1227.5 molecules/sec - ETA: 0.0 min
+Database loaded in 4.49 seconds (1176.7 molecules/sec)
+Database preparation: Removing duplicate entries...
+Training: The training dataset consists of 1845 active compounds and 197 inactive compounds
+Training: The training dataset has been written to the file clean_training_db.csv
+Training dataset preparation is complete!
+
+Preparing for calculations...
+
+Loaded training set and labels from disk.
+
+
+----VIRTUAL SCREENING----
+
+OPTIMIZATION: Loading dataset from /home/cosco/cosco_data/malibu/pyrmd/final_29072025/new/Tutorial/PyRMD/Benchmarking/database_to_screen.csv
+OPTIMIZATION: File size: 0.09 GB
+OPTIMIZATION: Loaded 1,000,000 compounds in 1.88 seconds
+OPTIMIZATION: Performing final cleanup...
+OPTIMIZATION: usnig all mol atonce
+Screening: The dataset consists of 1000000 compounds. The dataset will be processed in 5 chunks
+Loaded trained model from disk.
+
+OPTIMIZATION: Processing 1,000,000 compounds in 5 chunks of 200,000 compounds each
+
+Screening: Processing chunk 1 out of 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 200,000 molecules using 20 parallel processes
+  ... 5.0% complete (10,000/200,000) - 1838.4 molecules/sec - ETA: 1.7 min
+  ... 10.0% complete (20,000/200,000) - 1762.7 molecules/sec - ETA: 1.7 min
+  ... 15.0% complete (30,000/200,000) - 1760.5 molecules/sec - ETA: 1.6 min
+  ... 20.0% complete (40,000/200,000) - 1744.1 molecules/sec - ETA: 1.5 min
+  ... 25.0% complete (50,000/200,000) - 1747.2 molecules/sec - ETA: 1.4 min
+  ... 30.0% complete (60,000/200,000) - 1721.5 molecules/sec - ETA: 1.4 min
+  ... 35.0% complete (70,000/200,000) - 1719.0 molecules/sec - ETA: 1.3 min
+  ... 40.0% complete (80,000/200,000) - 1706.6 molecules/sec - ETA: 1.2 min
+  ... 45.0% complete (90,000/200,000) - 1693.8 molecules/sec - ETA: 1.1 min
+  ... 50.0% complete (100,000/200,000) - 1673.9 molecules/sec - ETA: 1.0 min
+  ... 55.0% complete (110,000/200,000) - 1659.8 molecules/sec - ETA: 0.9 min
+  ... 60.0% complete (120,000/200,000) - 1647.3 molecules/sec - ETA: 0.8 min
+  ... 65.0% complete (130,000/200,000) - 1638.5 molecules/sec - ETA: 0.7 min
+  ... 70.0% complete (140,000/200,000) - 1625.6 molecules/sec - ETA: 0.6 min
+  ... 75.0% complete (150,000/200,000) - 1615.5 molecules/sec - ETA: 0.5 min
+  ... 80.0% complete (160,000/200,000) - 1606.3 molecules/sec - ETA: 0.4 min
+  ... 85.0% complete (170,000/200,000) - 1598.8 molecules/sec - ETA: 0.3 min
+  ... 90.0% complete (180,000/200,000) - 1594.3 molecules/sec - ETA: 0.2 min
+  ... 95.0% complete (190,000/200,000) - 1583.6 molecules/sec - ETA: 0.1 min
+  ... 100.0% complete (200,000/200,000) - 1573.8 molecules/sec - ETA: 0.0 min
+Database loaded in 127.92 seconds (1563.4 molecules/sec)
+Screening: Calculating predictions for chunk 1....
+
+[DEBUG] Calculating molecular similarities with fp_type=mhfp
+Chunk processed in 167.43 seconds
+
+Screening: Processing chunk 2 out of 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 200,000 molecules using 20 parallel processes
+  ... 5.0% complete (10,000/200,000) - 1430.7 molecules/sec - ETA: 2.2 min
+  ... 10.0% complete (20,000/200,000) - 1564.3 molecules/sec - ETA: 1.9 min
+  ... 15.0% complete (30,000/200,000) - 1607.0 molecules/sec - ETA: 1.8 min
+  ... 20.0% complete (40,000/200,000) - 1624.1 molecules/sec - ETA: 1.6 min
+  ... 25.0% complete (50,000/200,000) - 1631.2 molecules/sec - ETA: 1.5 min
+  ... 30.0% complete (60,000/200,000) - 1626.4 molecules/sec - ETA: 1.4 min
+  ... 35.0% complete (70,000/200,000) - 1635.1 molecules/sec - ETA: 1.3 min
+  ... 40.0% complete (80,000/200,000) - 1620.2 molecules/sec - ETA: 1.2 min
+  ... 45.0% complete (90,000/200,000) - 1617.4 molecules/sec - ETA: 1.1 min
+  ... 50.0% complete (100,000/200,000) - 1610.4 molecules/sec - ETA: 1.0 min
+  ... 55.0% complete (110,000/200,000) - 1594.1 molecules/sec - ETA: 0.9 min
+  ... 60.0% complete (120,000/200,000) - 1581.1 molecules/sec - ETA: 0.8 min
+  ... 65.0% complete (130,000/200,000) - 1572.7 molecules/sec - ETA: 0.7 min
+  ... 70.0% complete (140,000/200,000) - 1560.1 molecules/sec - ETA: 0.6 min
+  ... 75.0% complete (150,000/200,000) - 1543.5 molecules/sec - ETA: 0.5 min
+  ... 80.0% complete (160,000/200,000) - 1534.1 molecules/sec - ETA: 0.4 min
+  ... 85.0% complete (170,000/200,000) - 1524.8 molecules/sec - ETA: 0.3 min
+  ... 90.0% complete (180,000/200,000) - 1518.3 molecules/sec - ETA: 0.2 min
+  ... 95.0% complete (190,000/200,000) - 1503.2 molecules/sec - ETA: 0.1 min
+  ... 100.0% complete (200,000/200,000) - 1492.0 molecules/sec - ETA: 0.0 min
+Database loaded in 134.77 seconds (1484.0 molecules/sec)
+Screening: Calculating predictions for chunk 2....
+Chunk processed in 168.62 seconds
+
+Screening: Processing chunk 3 out of 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 200,000 molecules using 20 parallel processes
+  ... 5.0% complete (10,000/200,000) - 1351.8 molecules/sec - ETA: 2.3 min
+  ... 10.0% complete (20,000/200,000) - 1470.6 molecules/sec - ETA: 2.0 min
+  ... 15.0% complete (30,000/200,000) - 1515.6 molecules/sec - ETA: 1.9 min
+  ... 20.0% complete (40,000/200,000) - 1559.2 molecules/sec - ETA: 1.7 min
+  ... 25.0% complete (50,000/200,000) - 1585.1 molecules/sec - ETA: 1.6 min
+  ... 30.0% complete (60,000/200,000) - 1598.3 molecules/sec - ETA: 1.5 min
+  ... 35.0% complete (70,000/200,000) - 1604.3 molecules/sec - ETA: 1.4 min
+  ... 40.0% complete (80,000/200,000) - 1597.1 molecules/sec - ETA: 1.3 min
+  ... 45.0% complete (90,000/200,000) - 1578.7 molecules/sec - ETA: 1.2 min
+  ... 50.0% complete (100,000/200,000) - 1568.8 molecules/sec - ETA: 1.1 min
+  ... 55.0% complete (110,000/200,000) - 1552.5 molecules/sec - ETA: 1.0 min
+  ... 60.0% complete (120,000/200,000) - 1539.5 molecules/sec - ETA: 0.9 min
+  ... 65.0% complete (130,000/200,000) - 1527.9 molecules/sec - ETA: 0.8 min
+  ... 70.0% complete (140,000/200,000) - 1514.2 molecules/sec - ETA: 0.7 min
+  ... 75.0% complete (150,000/200,000) - 1505.8 molecules/sec - ETA: 0.6 min
+  ... 80.0% complete (160,000/200,000) - 1497.5 molecules/sec - ETA: 0.4 min
+  ... 85.0% complete (170,000/200,000) - 1484.5 molecules/sec - ETA: 0.3 min
+  ... 90.0% complete (180,000/200,000) - 1474.7 molecules/sec - ETA: 0.2 min
+  ... 95.0% complete (190,000/200,000) - 1460.5 molecules/sec - ETA: 0.1 min
+  ... 100.0% complete (200,000/200,000) - 1451.3 molecules/sec - ETA: 0.0 min
+Database loaded in 138.74 seconds (1441.5 molecules/sec)
+Screening: Calculating predictions for chunk 3....
+
+[DEBUG] Calculating molecular similarities with fp_type=mhfp
+Chunk processed in 180.56 seconds
+
+Screening: Processing chunk 4 out of 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 200,000 molecules using 20 parallel processes
+  ... 5.0% complete (10,000/200,000) - 1305.9 molecules/sec - ETA: 2.4 min
+  ... 10.0% complete (20,000/200,000) - 1444.7 molecules/sec - ETA: 2.1 min
+  ... 15.0% complete (30,000/200,000) - 1482.6 molecules/sec - ETA: 1.9 min
+  ... 20.0% complete (40,000/200,000) - 1510.7 molecules/sec - ETA: 1.8 min
+  ... 25.0% complete (50,000/200,000) - 1514.0 molecules/sec - ETA: 1.7 min
+  ... 30.0% complete (60,000/200,000) - 1533.0 molecules/sec - ETA: 1.5 min
+  ... 35.0% complete (70,000/200,000) - 1531.5 molecules/sec - ETA: 1.4 min
+  ... 40.0% complete (80,000/200,000) - 1528.4 molecules/sec - ETA: 1.3 min
+  ... 45.0% complete (90,000/200,000) - 1532.0 molecules/sec - ETA: 1.2 min
+  ... 50.0% complete (100,000/200,000) - 1520.6 molecules/sec - ETA: 1.1 min
+  ... 55.0% complete (110,000/200,000) - 1503.6 molecules/sec - ETA: 1.0 min
+  ... 60.0% complete (120,000/200,000) - 1498.0 molecules/sec - ETA: 0.9 min
+  ... 65.0% complete (130,000/200,000) - 1498.0 molecules/sec - ETA: 0.8 min
+  ... 70.0% complete (140,000/200,000) - 1494.8 molecules/sec - ETA: 0.7 min
+  ... 75.0% complete (150,000/200,000) - 1484.9 molecules/sec - ETA: 0.6 min
+  ... 80.0% complete (160,000/200,000) - 1481.9 molecules/sec - ETA: 0.4 min
+  ... 85.0% complete (170,000/200,000) - 1472.4 molecules/sec - ETA: 0.3 min
+  ... 90.0% complete (180,000/200,000) - 1463.6 molecules/sec - ETA: 0.2 min
+  ... 95.0% complete (190,000/200,000) - 1455.8 molecules/sec - ETA: 0.1 min
+  ... 100.0% complete (200,000/200,000) - 1446.2 molecules/sec - ETA: 0.0 min
+Database loaded in 139.09 seconds (1438.0 molecules/sec)
+Screening: Calculating predictions for chunk 4....
+
+[DEBUG] Calculating molecular similarities with fp_type=mhfp
+Chunk processed in 187.72 seconds
+
+Screening: Processing chunk 5 out of 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Database Preparation: Stripping salts...
+Database Preparation: Calculating tautomeric and protonation states for physiological pH...
+Database Preparation: Converting in MHFP fingerprints, with 2048 permutations and a radius of 3...
+OPTIMIZATION: Processing 200,000 molecules using 20 parallel processes
+  ... 5.0% complete (10,000/200,000) - 1368.4 molecules/sec - ETA: 2.3 min
+  ... 10.0% complete (20,000/200,000) - 1455.1 molecules/sec - ETA: 2.1 min
+  ... 15.0% complete (30,000/200,000) - 1536.0 molecules/sec - ETA: 1.8 min
+  ... 20.0% complete (40,000/200,000) - 1564.5 molecules/sec - ETA: 1.7 min
+  ... 25.0% complete (50,000/200,000) - 1584.1 molecules/sec - ETA: 1.6 min
+  ... 30.0% complete (60,000/200,000) - 1585.3 molecules/sec - ETA: 1.5 min
+  ... 35.0% complete (70,000/200,000) - 1571.7 molecules/sec - ETA: 1.4 min
+  ... 40.0% complete (80,000/200,000) - 1559.1 molecules/sec - ETA: 1.3 min
+  ... 45.0% complete (90,000/200,000) - 1554.6 molecules/sec - ETA: 1.2 min
+  ... 50.0% complete (100,000/200,000) - 1546.1 molecules/sec - ETA: 1.1 min
+  ... 55.0% complete (110,000/200,000) - 1529.1 molecules/sec - ETA: 1.0 min
+  ... 60.0% complete (120,000/200,000) - 1519.4 molecules/sec - ETA: 0.9 min
+  ... 65.0% complete (130,000/200,000) - 1512.4 molecules/sec - ETA: 0.8 min
+  ... 70.0% complete (140,000/200,000) - 1498.7 molecules/sec - ETA: 0.7 min
+  ... 75.0% complete (150,000/200,000) - 1486.7 molecules/sec - ETA: 0.6 min
+  ... 80.0% complete (160,000/200,000) - 1481.4 molecules/sec - ETA: 0.5 min
+  ... 85.0% complete (170,000/200,000) - 1471.7 molecules/sec - ETA: 0.3 min
+  ... 90.0% complete (180,000/200,000) - 1461.1 molecules/sec - ETA: 0.2 min
+  ... 95.0% complete (190,000/200,000) - 1452.1 molecules/sec - ETA: 0.1 min
+  ... 100.0% complete (200,000/200,000) - 1443.8 molecules/sec - ETA: 0.0 min
+Database loaded in 139.32 seconds (1435.5 molecules/sec)
+Screening: Calculating predictions for chunk 5....
+
+[DEBUG] Calculating molecular similarities with fp_type=mhfp
+Chunk processed in 179.42 seconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Predictions complete! The results have been written to the file /home/cosco/cosco_data/malibu/pyrmd/final_29072025/new/Tutorial/PyRMD/Screening/Database_Predictions.csv
+OPTIMIZATION: Loading dataset from /home/cosco/cosco_data/malibu/pyrmd/final_29072025/new/Tutorial/PyRMD/Screening/Database_Predictions.csv
+OPTIMIZATION: File size: 0.00 GB
+OPTIMIZATION: Loaded 17 compounds in 0.00 seconds
+Flagging potential PAINS...
+Generating a .smi file of the predicted active compounds...
+OPTIMIZATION: Loading dataset from /home/cosco/cosco_data/malibu/pyrmd/final_29072025/new/Tutorial/PyRMD/Screening/Database_Predictions.csv
+OPTIMIZATION: File size: 0.00 GB
+OPTIMIZATION: Loaded 17 compounds in 0.00 seconds
+SMI file generated!
+Screening process complete!
