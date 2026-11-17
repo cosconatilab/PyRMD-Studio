@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use PyRMD Studio, please cite the paper below."
+title: "PyRMD Studio"
+type: software
+license: AGPL-3.0
+repository-code: "https://github.com/cosconatilab/PyRMD-Studio"
+authors:
+  - family-names: Natale
+    given-names: Benito
+  - family-names: Waqas
+    given-names: Muhammad
+  - family-names: Roggia
+    given-names: Michele
+  - family-names: Di Maro
+    given-names: Salvatore
+  - family-names: Cosconati
+    given-names: Sandro
+preferred-citation:
+  type: article
+  title: "PyRMD Studio: A Unified Suite for Next-Generation, AI-Powered Virtual Screening"
+  journal: "Journal of Chemical Information and Modeling"
+  year: 2026
+  volume: 66
+  issue: 11
+  start: 6197
+  end: 6203
+  doi: "10.1021/acs.jcim.6c00648"
+  authors:
+    - family-names: Natale
+      given-names: Benito
+    - family-names: Waqas
+      given-names: Muhammad
+    - family-names: Roggia
+      given-names: Michele
+    - family-names: Di Maro
+      given-names: Salvatore
+    - family-names: Cosconati
+      given-names: Sandro
