@@ -16,3 +16,12 @@ The installation script automates dependency management and system configuration
 6.	When prompted, select the user-specific installation. This is the recommended option as it does not require administrator privileges. 
 
 A sep-by-step guide on how to use PyRMD Studio is provided inside the Tutorial folder. 
+
+
+## Authors and citation
+
+PyRMD Studio was developed by Benito Natale and Muhammad Waqas in the Cosconati lab (University of Campania Luigi Vanvitelli), together with Michele Roggia, Salvatore Di Maro and Sandro Cosconati.
+
+If you use PyRMD Studio, please cite:
+
+Natale B, Waqas M, Roggia M, Di Maro S, Cosconati S. PyRMD Studio: A Unified Suite for Next-Generation, AI-Powered Virtual Screening. *J. Chem. Inf. Model.* 2026, 66(11), 6197-6203. [https://doi.org/10.1021/acs.jcim.6c00648](https://doi.org/10.1021/acs.jcim.6c00648)
